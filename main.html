@@ -8,6 +8,32 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	  <title>Pseudo-Elements Example</title>
+  <style>
+    /* Styling the container */
+    #container {
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid #000; /* optional to visualize the container */
+    }
+
+    /* Insert content before the container content */
+    #container::before {
+      content: "Before Text - ";
+      color: #f00;
+      font-size: 20px;
+    }
+
+    /* Insert content after the container content */
+    #container::after {
+      content: " - After Text";
+      color: #f00;
+      font-size: 20px;
+    }
+  </style>
+  <div id="container">
+    This is the main content of the container.
+  </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
